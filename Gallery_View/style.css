@@ -15,7 +15,7 @@
       padding: 0;
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
-      background-color: #050801;
+      /* background-color: #050801; */
       z-index: 1000;
   }
   
@@ -194,6 +194,7 @@
   }
   
   canvas {
+    background-color: #050801;
       position: fixed;
       top: 0;
       left: inherit;
