@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Samarthya 2k24</title>
+    
+  </head>
+  <body>
+     <!-- Preloader -->
+     <!-- <div class="preloader-wrap">
+      <div class="outer">
+          <div class="inner">
+              <div class="percentage" id="precent"></div>
+              <div class="trackbar">
+                  <div class="loadbar"></div>
+              </div>
+              <div class="headphones"></div>
+              <div class="headphones-text">Turn up the volume for the<br>best experience</div>
+          </div>
+      </div>
+  </div> -->
+  <!--/Preloader -->  
+    <div id="content">
+      <nav>
+          <div class="header container">
+              <div class="logo">
+                  <a href="../index.html"><img style="width:120px;" src="../logo.png" alt=""></a>
+              </div>
+              <div class="navlinks">
+                  <ul>
+                      <li class="active"><a href="../index.html" class="link">Home</a></li>
+                      <li><a href="#" class="link">Events</a></li>
+                      <li><a href="./index.html" class="link">Gallery</a></li>
+                      <li><a href="../Animated_Team_Card/index.html" class="link">Team</a></li>
+                      <li><a href="#" class="link">About Us</a></li>
+                  </ul>
+              </div>
+              <div class="ham">
+                  <a class="neon" href="#">
+                      <span></span><span></span>
+                      <span></span><span></span>
+                      Login
+                  </a>
+                  <a class="btn">Register</a>
+              </div>
+          </div>
+          <canvas id="canvas"></canvas>
+      </nav>
+  </div>
+  
+  <div class="gradient"></div>
+  </div>
+  
+    <main>
+      <ul class="slider">
+        <li
+          class="item"
+          style="
+            background-image: url('1.jpg');
+          "
+        ></li>
+        <li
+          class="item"
+          style="background-image: url('2.jpg')"
+        ></li>
+        <li
+          class="item"
+          style="
+            background-image: url('3.jpg');
+          "
+        ></li>
+        <li
+          class="item"
+          style="
+            background-image: url('4.jpg');
+          "
+        ></li>
+        <li
+          class="item"
+          style="
+            background-image: url('5.jpg');
+          "
+        ></li>
+        <li
+          class="item"
+          style="
+            background-image: url('6.jpg');
+          "
+        ></li>
+        <li
+          class="item"
+          style="
+            background-image: url('7.jpg');
+          "
+        ></li>
+        <li
+          class="item"
+          style="
+            background-image: url('8.jpg');
+          "
+        ></li>
+        <li
+          class="item"
+          style="
+            background-image: url('9.jpg');
+          "
+        ></li>
+       
+      </ul>
+      <nav class="nava">
+        <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+        <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+      </nav>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../js/navbar.js"></script>
+  </body>
+  <script>
+    const slider = document.querySelector(".slider");
+
+    function activate(e) {
+      const items = document.querySelectorAll(".item");
+      e.target.matches(".next") && slider.append(items[0]);
+      e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+    }
+
+    document.addEventListener("click", activate, false);
+  </script>
+</html>
