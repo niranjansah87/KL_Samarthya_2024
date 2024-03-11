@@ -18,6 +18,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
 
       <style >
  
@@ -134,40 +135,50 @@
         
         <div class="cd-index cd-main-content">
     
-        <!-- Page Content -->
-        <div id="page-content" class="light-content">
-            
-            <!-- Header -->
-            <header class="classic-menu">
-                <div id="header-container">
+            <!-- Page Content -->
+            <div id="page-content" class="light-content">
                 
-                
-                <!-- Logo -->
-                <div id="logo" class="hide-ball">
-                    <a class="ajax-link" data-type="page-transition" href="index-2.html">
-                        <img class="black-logo" src="logo.png" alt="Samarthya">
-                        <img class="white-logo" src="logo.png" alt="Samarthya">
-                    </a>
-                </div>
-                <!--/Logo -->             
-                
-                <!-- Navigation -->
-                <nav> 
-                	<div class="nav-height">
-                        <div class="outer">
-                            <div class="inner">           
-                                <ul data-breakpoint="1025" class="flexnav">
-                                                              
-                                    <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="about.html"><span data-hover="About Us">About Us</span></a></li> 
-                                    <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="carousel.html"><span data-hover="Events">Events</span></a></li>                         
-                                    <li class="link menu-timeline" onclick="openNav()" style="cursor: pointer;" ><a ><span data-hover="Team">Team</span></a></li>
-                                    <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="contact.html"><span data-hover="Contact Us">Contact Us</span></a></li>              
-                                </ul>            
+                <!-- Header -->
+                <header class="classic-menu">
+                    <canvas id="canvas"></canvas>
+                    <div id="header-container">
+                    
+                    
+                    <!-- Logo -->
+                    <div id="logo" class="hide-ball">
+                        <a class="ajax-link" data-type="page-transition" href="#">
+                            <img class="black-logo" src="logo.png" alt="Samarthya">
+                            <img class="white-logo" src="logo.png" alt="Samarthya">
+                        </a>
+                    </div>
+                    <!--/Logo -->             
+                    
+                    <!-- Navigation -->
+                    <nav>
+                        <div class="header container">
+                            <div class="navlink">
+                                <ul>
+                                    <li class="active"><a href="#" class="alink">Home</a></li>
+                                    <li><a href="#" class="alink">Events</a></li>
+                                    <li><a href="#" class="alink">Gallery</a></li>
+                                    <li><a href="#" class="alink">Team</a></li>
+                                    <li><a href="#" class="alink">About Us</a></li>
+                                </ul>
                             </div>
-                        </div> 
-                    </div>          
-                </nav>
-                <!--/Navigation -->
+                            <div class="ham">
+                                <a class="neon" href="#">
+                                    <span></span><span></span>
+                                    <span></span><span></span>
+                                    Login
+                                </a>
+                                <a class="btn">REGISTER</a>
+                            </div>
+                        </div>
+                        
+                    </nav>
+                    <!--/Navigation -->
+                    
+        
                 
     
 
@@ -224,7 +235,7 @@
                                             <!--/Section Slide -->
 
                                             <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Code Buster" data-subtitle="Samarthya" data-number="02">                                    
+                                            <div class="swiper-slide" data-title="Code Buster" data-subtitle="Samarthya presents" data-number="02">                                    
                                                 <div class="img-mask">
                                                     <div class="section-image" data-src="images/01hero.jpg"></div>                               
                                                 </div>
@@ -234,7 +245,7 @@
                                             
                                             
                                             <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="QUINT HURDLE" data-subtitle="Development Club" data-number="03">                                            
+                                            <div class="swiper-slide" data-title="Instant Speech" data-subtitle="Samarthya presents" data-number="03">                                            
                                                 <div class="img-mask">
                                                     <div class="section-image" data-src="images/02hero.jpg"></div>                                            
                                                 </div>
@@ -243,78 +254,78 @@
                                             <!--/Section Slide -->					
                                             
                                             <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="CRYPTIC HUNT" data-subtitle="Development Club" data-number="04">                                        
+                                            <div class="swiper-slide" data-title="Math Buzz" data-subtitle="Samarthya presents" data-number="04">                                        
                                                 <div class="img-mask">
                                                     <div class="section-image" data-src="images/04hero.jpg"></div>                                            
                                                 </div>
-                                                <a class="showcase-link-project" data-type="page-transition" href="project04.html"></a>                                        
+                                                <a class="showcase-link-project" data-type="page-transition" href="./event/math buzz.html"></a>                                        
                                             </div>
                                             <!--/Section Slide -->
                                             <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="HACKATHON" data-subtitle="Development Club" data-number="05">                                        
+                                            <div class="swiper-slide" data-title="Pass the bomb" data-subtitle="Samarthya presents" data-number="05">                                        
                                                 <div class="img-mask">
                                                     <div class="section-image" data-src="images/05hero.jpg"></div>                                            
                                                 </div>
-                                                <a class="showcase-link-project" data-type="page-transition" href="projecte.html"></a>                                        
+                                                <a class="showcase-link-project" data-type="page-transition" href="./event/pass the bomb.html"></a>                                        
                                             </div>
                                             <!--/Section Slide -->
                                             
                                             <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="KODEATHON INTERNATIONAL" data-subtitle="Programming Club" data-number="06">                                        
+                                            <div class="swiper-slide" data-title="Prime suspect" data-subtitle="Samarthya presents" data-number="06">                                        
                                                 <div class="img-mask">
                                                     <div class="section-image" data-src="images/06hero.jpg"></div>                                            
                                                 </div>
-                                                <a class="showcase-link-project" data-type="page-transition" href="project05.html"></a>                                        
+                                                <a class="showcase-link-project" data-type="page-transition" href="./event/prime suspect.html"></a>                                        
                                             </div>
                                             <!--/Section Slide -->
                                             
                                             
                                             <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="KODEATHON" data-subtitle="Programming Club" data-number="07">                                    
+                                            <div class="swiper-slide" data-title="Smash Kart" data-subtitle="Samarthya presents" data-number="07">                                    
                                                 <div class="img-mask">
                                                     <div class="section-image" data-src="images/07hero.jpg"></div>                                    
                                                 </div>
-                                                <a class="showcase-link-project" data-type="page-transition" href="project06.html"></a>                                    
+                                                <a class="showcase-link-project" data-type="page-transition" href="./event/smash kart.html"></a>                                    
                                             </div>
                                             <!--/Section Slide -->
                                             
                                             
                                             <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="CODE WAR" data-subtitle="Programming Club" data-number="08">                                    
+                                            <div class="swiper-slide" data-title="Soduko" data-subtitle="Samarthya presents" data-number="08">                                    
                                                 <div class="img-mask">
                                                     <div class="section-image" data-src="images/08hero.jpg"></div>                                    
                                                 </div>
-                                                <a class="showcase-link-project" data-type="page-transition" href="project07.html"></a>                                    
+                                                <a class="showcase-link-project" data-type="page-transition" href="./event/soduko.html"></a>                                    
                                             </div>
                                             <!--/Section Slide -->
                                             
                                             
                                             <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="CODE SPRINT" data-subtitle="Programming Club" data-number="09">                                    
+                                            <div class="swiper-slide" data-title="Tug of war" data-subtitle="Samarthya presents" data-number="09">                                    
                                                 <div class="img-mask">
                                                     <div class="section-image" data-src="images/09hero.jpg"></div>                                    
                                                 </div>
-                                                <a class="showcase-link-project" data-type="page-transition" href="project08.html"></a>                                    
+                                                <a class="showcase-link-project" data-type="page-transition" href="./event/thug of war.html"></a>                                    
                                             </div>
                                             <!--/Section Slide -->
                                             
                                             
                                             <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="OBLIVION" data-subtitle="Multimedia Club" data-number="10">                                    
+                                            <div class="swiper-slide" data-title="Word block" data-subtitle="Samarthya presents" data-number="10">                                    
                                                 <div class="img-mask">
                                                     <div class="section-image" data-src="images/10hero.jpg"></div>                                    
                                                 </div>
-                                                <a class="showcase-link-project" data-type="page-transition" href="project09.html"></a>                                    
+                                                <a class="showcase-link-project" data-type="page-transition" href="./event/word block.html"></a>                                    
                                             </div>
                                             <!--/Section Slide -->
                                             
                                             
                                             <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="LOGO DESIGN WORKSHOP" data-subtitle="Multimedia Club" data-number="11">                                    
+                                            <div class="swiper-slide" data-title="Just a min" data-subtitle="Samarthya presents" data-number="11">                                    
                                                 <div class="img-mask">
-                                                    <div class="section-image" data-src="images/11hero.jpg"></div>                                    
+                                                    <div class="section-image" data-src="images/03hero.jpg"></div>                                    
                                                 </div>
-                                                <a class="showcase-link-project" data-type="page-transition" href="project10.html"></a>                                    
+                                                <a class="showcase-link-project" data-type="page-transition" href="./event/just a min.html"></a>                                    
                                             </div>
                                             <!--/Section Slide -->              
                                             
@@ -373,8 +384,8 @@
                         <div class="socials-text">Follow us</div>
                         <ul class="socials">
                            
-                            <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/tachyon.juet/" target="_blank">Fb</a></span></li>
-                            <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/csi.juet/">In</a></span></li>
+                            <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/kl.csit" target="_blank">FB</a></span></li>
+                            <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/kl.samarthya/">IN</a></span></li>
                         </ul>                
                     </div>
                     
@@ -412,6 +423,7 @@
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&amp;sensor=false"></script>
 	<script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="./js/navbar.js"></script>
     <script>
  
       function openNav() {

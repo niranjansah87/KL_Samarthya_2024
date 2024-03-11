@@ -1244,7 +1244,7 @@ Primary use:	Showcase Portfolio
 	
 	#logo img.white-logo {
 		position:absolute;
-		top:0;
+		top:-30px;
 		left:0;
 		opacity:0;
 	}
@@ -1275,7 +1275,6 @@ Primary use:	Showcase Portfolio
 			margin: 10px 0;
 			background-color:transparent!important;
 		}
-		
 		.flexnav {
 			display: block;
 			float: right;
