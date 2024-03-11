@@ -407,7 +407,31 @@
 <script type="text/javascript" src="js/main.js"></script> 
 <script src="js/wow.min.js"></script> 
 <script src="js/navbar.js"></script>
+<script>
+    // Check if the page exists
+function checkPageExistence() {
+    // Get the current page's URL
+    var currentPage = window.location.href;
+    
+    // Use fetch to check if the page exists
+    fetch(currentPage)
+    .then(response => {
+        if (!response.ok) {
+            // If the page is not found (404), redirect to the custom 404 page
+            window.location.href = './page-not-found.html';
+        }
+    })
+    .catch(error => {
+        console.error('Error checking page existence:', error);
+    });
+}
 
+// Call the function to check page existence when the page loads
+window.onload = function() {
+    checkPageExistence();
+};
+
+</script>
 <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       
