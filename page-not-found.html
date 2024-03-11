@@ -45,29 +45,5 @@
 <!-- partial -->
   
 </body>
-<script>
-    // Check if the page exists
-function checkPageExistence() {
-    // Get the current page's URL
-    var currentPage = window.location.href;
-    
-    // Use fetch to check if the page exists
-    fetch(currentPage)
-    .then(response => {
-        if (!response.ok) {
-            // If the page is not found (404), redirect to the custom 404 page
-            window.location.href = './page-not-found.html';
-        }
-    })
-    .catch(error => {
-        console.error('Error checking page existence:', error);
-    });
-}
-
-// Call the function to check page existence when the page loads
-window.onload = function() {
-    checkPageExistence();
-};
-
-</script>
+gi
 </html>
