@@ -293,3 +293,54 @@ canvas {
   .active::after {
     transform: scaleX(1);
   }
+
+
+
+
+
+  @media (max-width: 767px) {
+    /* Adjust styles for smaller screens */
+    
+
+    .navlink.active {
+        display: flex; /* Show the nav links when active */
+    }
+
+    .navlink ul {
+        flex-direction: column; /* Stack the nav links vertically */
+        gap: 10px; /* Adjust the gap between nav links */
+    }
+
+    .navlink ul a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .header {
+        flex-direction: column;
+        justify-content: space-between; /* Adjusted to stack items vertically on smaller screens */
+        flex-wrap: wrap; /* Allow items to wrap to new lines */
+    }
+
+    .ham {
+        display: flex; /* Show the hamburger menu on smaller screens */
+        align-items: center; /* Align the items within the hamburger menu */
+    }
+
+    .navlink {
+        display: none; /* Hide the nav links initially on smaller screens */
+        flex-basis: 100%; /* Allow the nav links to occupy full width when shown */
+        order: 1; /* Adjust the order to move the nav links below the hamburger menu */
+    }
+
+    .navlink.active {
+        display: flex; /* Show the nav links when active */
+    }
+
+    .navlink ul {
+        flex-direction: column; /* Stack the nav links vertically */
+        gap: 1rem; /* Adjust the gap between nav links */
+    }
+
+    .navlink ul a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
