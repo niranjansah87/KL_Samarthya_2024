@@ -2910,7 +2910,8 @@
 	}
 	
 	#logo {
-		left: 30px;
+		top:40px;
+		left: 20px;
 	}
 	
 	#menu-burger {
@@ -2919,7 +2920,7 @@
 	}
 	
 	.flexnav {
-    	padding: 0 40px;
+    	padding: 0 10px;
 	}
 	
 	.flexnav li {
@@ -3050,6 +3051,7 @@
 	}
 	
 	#logo {
+		top:40px;
 		left: 20px;
 	}
 	
