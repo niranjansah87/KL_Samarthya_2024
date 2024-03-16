@@ -1,73 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Samyak</title>
-    <link rel="stylesheet" href="./css/about.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samarthya 2024</title>
+    <link rel="stylesheet" href="./css/about.css" />
+    <!-- <link rel="stylesheet" href="./css/navbar.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- MainContainer -->
-    <div class="MainContainer">
-        <!-- AboutSamyak -->
-        <div class="TheHeading">
-            <span>
-                <h1>About</h1>
-            </span>
+
+    <div id="content">
+      <nav>
+        <div class="header container">
+          <div class="logo">
+            <a href="#"><img style="width: 120px" src="logo.png" alt="" /></a>
+          </div>
+          <div class="navlinks">
+            <ul>
+              <li class="active"><a href="#" class="link">Home</a></li>
+              <li><a href="#" class="link">Events</a></li>
+              <li><a href="#" class="link">Gallery</a></li>
+              <li><a href="#" class="link">Team</a></li>
+              <li><a href="#" class="link">About Us</a></li>
+            </ul>
+          </div>
+          <div class="ham">
+            <a class="neon" href="#">
+              <span></span><span></span> <span></span><span></span>
+              Login
+            </a>
+            <a class="btn">Register</a>
+          </div>
         </div>
-        <div class="AboutSamyak">
-            <!-- AboutSamyakLeft -->
-            <div class="AboutSamyakLeft">
-                <h1>About Samyak</h1>
-                <p>SAMYAK is a national-level techno-management fest organized by 
-                    the students of KL University. It is a two- day festival filled 
-                    with activities, events, workshops, and student performances that 
-                    drive the students to experience the joy in being part of a synergy.</p>
-                <p id="about">The colours popping throughout, the theme-relevant artworks 
-                    designed from scratch by the student teams, the elegance in 
-                    student groups coming together after all the effort they put 
-                    in until the day of the fest cannot be looked past.</p>
-                <p id="about1">A 12 year legacy, still burning bright and being passed down 
-                    to the coming batches is a standing example of the camaraderie 
-                    the students share even between the passing batches. It shows a 
-                    great promise in terms of offering a unique experience to students 
-                    through a plethora of events that strengthen their technical and 
-                    all-round abilities.</p>
-                
-            </div>
-            <!-- AboutSamyakRight -->
-            <div class="AboutSamyakRight">
-                <img src="./images/klsamarthya.jpg" alt="3"/>
-            </div>
-        </div>
-        <!-- AboutTheme -->
-        <div class="AboutTheme">
-            <!-- AboutThemeLeft -->
-            <div class="AboutThemeLeft">
-                <img src="./images/klsamarthya1.jpg" alt="3"/>
-            </div>
-            <!-- AboutThemeRight -->
-            <div class="AboutThemeRight">
-                <h1>About SVAPASYA</h1>
-                <p><b>svapasyā स्वपस्या</b></p>
-                <p>A skillful path towards sustainable development. Skill is the foundation upon which we build our aspirations and ambitions. Skills are the building blocks of personal and societal progress. They empower individuals to reach their potential, contribute to their communities, and adapt to the ever-changing demands of the world. The importance of skill in life cannot be overstated, as it influences our capacity to succeed, innovate, and lead fulfilling and purposeful lives. The relationship between being skillful and sustainable development is significant and multifaceted. Being skillful, both individually and collectively, contributes to the achievement of sustainable development goals in several ways. Skillful individuals and professionals are essential drivers of progress toward a more sustainable and environmentally responsible future. Their expertise and actions are critical in addressing the complex challenges that the world faces in achieving sustainability goals.</p>
-            </div>
-        </div>
-        <!-- AboutKLU -->
-        <div class="AboutKLU">
-            <!-- AboutKLULeft -->
-            <div class="AboutKLULeft">
-                <img src="./images/kl.jpeg" alt="4" />
-            </div>
-            <!-- AboutKLURight -->
-            <div class="AboutKLURight">
-                <h1>About KL University</h1>
-                <p>A haven of knowledge and an ecstatic learning atmosphere, KL University is one of the most prestigious academic institutions in India with a supreme vision that it manifests in its exceptional operation.</p>
-                <p>Recognized as Deemed to be University in 2009, the foundation achieved immense acclaim for its incredible success in turning students into eminent leaders and industry experts.</p>
-                <p>Not only in the areas pertaining to academics here find an environment that helps them to pursue their passions and flourish in the fields of their interest. With a wide array of opportunities available at their disposal, the student community is engaged in continuously broadening their horizons.</p>
-                <a href="https://goo.gl/maps/8sGwAL2VB6fNCgrz6" target="_blank" rel="noreferrer"><i class="fa fa-map-marker"></i> KL University</a>
-            </div>
-        </div>
+        <canvas id="canvas"></canvas>
+      </nav>
     </div>
-</body>
+
+    <div class="gradient"></div>
+
+    <div class="MainContainer">
+      <!-- AboutSamarthya -->
+      <div class="TheHeading">
+        
+          <h1>About</h1>
+        
+      </div>
+      <div class="AboutSamarthya">
+        <!-- AboutSamarthyaLeft -->
+        <div class="AboutSamarthyaLeft">
+          <h1>About Samarthya</h1>
+          <p>
+            National level techno-cultural fest organized by the Dept of CS-IT .
+            It is a two-day festival filled with activities, workshops and
+            cultural activities, which focuses on testing the potential of
+            students in both cultural and academic events which helps in
+            improving their individual skills and bring an exposure.
+          </p>
+          <!-- <p id="about">
+            The colours popping throughout, the theme-relevant artworks designed
+            from scratch by the student teams, the elegance in student groups
+            coming together after all the effort they put in until the day of
+            the fest cannot be looked past.
+          </p>
+          <p id="about1">
+            A 12 year legacy, still burning bright and being passed down to the
+            coming batches is a standing example of the camaraderie the students
+            share even between the passing batches. It shows a great promise in
+            terms of offering a unique experience to students through a plethora
+            of events that strengthen their technical and all-round abilities.
+          </p> -->
+        </div>
+        <!-- AboutSamarthyaRight -->
+        <div class="AboutSamarthyaRight">
+          <img src="./images/klsamarthya.jpg" alt="3" />
+        </div>
+      </div>
+      <!-- AboutTheme -->
+      <div class="AboutTheme">
+        <!-- AboutThemeLeft -->
+        <div class="AboutThemeLeft">
+          <img src="./images/klsamarthya1.jpg" alt="3" />
+        </div>
+        <!-- AboutThemeRight -->
+        <div class="AboutThemeRight">
+          <h1>About Department of CSIT</h1>
+
+          <p>
+            Computer science and information technology (IT) are two related but
+            distinct fields that deal with the processing, storage, and
+            transmission of information.Computer science focuses on the
+            theoretical and practical aspects of computing, including
+            algorithms, data structures, programming languages, software design,
+            and computer architecture.Information technology, on the other hand,
+            is a more applied field that deals with the implementation and
+            management of computer-based systems, networks, and databases.
+          </p>
+        </div>
+      </div>
+      <!-- AboutKLU -->
+      <div class="AboutKLU">
+        <!-- AboutKLULeft -->
+        <div class="AboutKLULeft">
+          <img src="./images/kl.jpeg" alt="4" />
+        </div>
+        <!-- AboutKLURight -->
+        <div class="AboutKLURight">
+          <h1>About KL University</h1>
+          <p>
+            A haven of knowledge and an ecstatic learning atmosphere, KL
+            University (KLU) is a private university located in the city of
+            Vijayawada, in the state of Andhra Pradesh, India. It was
+            established in 1980 as Koneru Lakshmaiah Education Foundation (KLEF)
+            and was granted university status in 2009.
+          </p>
+          <p>
+            KLU offers undergraduate and postgraduate programs in engineering,
+            management, law, science, arts, and humanities. The university is
+            known for its strong emphasis on research and innovation, and has
+            collaborations with several leading universities and research
+            institutions around the world.Overall, KL University is a leading
+            institution of higher education in India, known for its academic
+            excellence, research focus, and commitment to innovation and
+            entrepreneurship.
+          </p>
+          
+          <a
+            href="https://goo.gl/maps/8sGwAL2VB6fNCgrz6"
+            target="_blank"
+            rel="noreferrer"
+            ><i class="fa fa-map-marker"></i> KL University</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/navbar.js"></script>
 </html>
