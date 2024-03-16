@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <title>KL Samarthya 2024</title>
   <link rel="stylesheet" href="./css/gallery.css">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   <!-- <link rel="stylesheet" href="navbar.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 <body>
-<!-- partial:index.partial.html -->
-
+ 
+  <video autoplay muted loop id="myVideo">
+    <source src="./about.mp4" type="video/mp4">
+  </video>
 
 
 <div id="content">
@@ -40,13 +43,13 @@
       </div>
       <canvas id="canvas"></canvas>
   </nav>
-</div>
+
 
 <div class="gradient"></div>
+</div>
 
 
-
-<main>
+<main >
   <h1>Click on the carousel</h1>
   <div class="carousel" onclick="onClick()" onmousemove="onMouseMove(event)">
     <div>
@@ -75,9 +78,10 @@
     </div>
     
 </main>
+
 <!-- partial -->
   <script  src="./js/gallery.js"></script>
   <script src="./js/navbar.js"></script>
-
+  
 </body>
 </html>
