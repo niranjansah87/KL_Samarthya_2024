@@ -19,11 +19,26 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
+
+
+
   </head>
   <body>
     <!-- MainContainer -->
+    <div class="loader">
+      <video autoplay muted id="loader-video">
+        <source src="./samarthya.gif.mp4" type="video/mp4">
+      </video>
+    </div>
 
-    <div id="content">
+
+    <div id="content" style="display: none;">
       <nav>
         <div class="header container">
           <div class="logo">
@@ -64,25 +79,15 @@
         <div class="AboutSamarthyaLeft">
           <h1>About Samarthya</h1>
           <p>
-            National level techno-cultural fest organized by the Dept of CS-IT .
-            It is a two-day festival filled with activities, workshops and
-            cultural activities, which focuses on testing the potential of
-            students in both cultural and academic events which helps in
-            improving their individual skills and bring an exposure.
+            Samarthya, a term imbued with significance and vibrancy, encapsulates the essence of the annual celebration hosted by the Department of Computer Science & Information Technology. Rooted in the rich tapestry of Indian culture, Samarthya conveys the notion of capability, proficiency, and empowerment.
+
           </p>
-          <!-- <p id="about">
-            The colours popping throughout, the theme-relevant artworks designed
-            from scratch by the student teams, the elegance in student groups
-            coming together after all the effort they put in until the day of
-            the fest cannot be looked past.
+          <p id="about">
+            Mark your calendars because this year, on March 23rd, we're gearing up for an electrifying extravaganza that you won't want to miss! Get ready to immerse yourself in a day filled with thrilling events, captivating competitions, and an unforgettable carnival experience.
           </p>
           <p id="about1">
-            A 12 year legacy, still burning bright and being passed down to the
-            coming batches is a standing example of the camaraderie the students
-            share even between the passing batches. It shows a great promise in
-            terms of offering a unique experience to students through a plethora
-            of events that strengthen their technical and all-round abilities.
-          </p> -->
+            Samarthya isn't just any ordinary celebration; it's a fusion of innovation, talent, and sheer excitement. Whether you're a coding whiz, a tech enthusiast, or simply looking for a good time, there's something for everyone at this year's event.,<br>Get ready to unleash your inner tech guru and let the celebration begin! See you at Samarthya '24- where the magic of technology meets the thrill of celebration.
+          </p>
         </div>
         <!-- AboutSamarthyaRight -->
         <div class="AboutSamarthyaRight">
@@ -182,6 +187,38 @@
 
    
     </footer>
+
+
+
+
+    
+    
+		
+    
+	
+	
+    
+   
+
+    <script src="./js/navbar.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const loaderVideo = document.getElementById('loader-video');
+    const content = document.getElementById('content');
+
+    // Add event listener to hide loader and show content when video ends
+    loaderVideo.addEventListener('ended', () => {
+      const loader = document.querySelector('.loader');
+      loader.style.display = 'none'; // Hide loader
+      content.style.display = 'block'; // Show content
+    });
+  });
+  
+  
+</script>
+    
+      
+  
   </body>
-  <script src="./js/navbar.js"></script>
+  
 </html>

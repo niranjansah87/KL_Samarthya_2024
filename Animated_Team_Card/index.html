@@ -11,7 +11,11 @@
 
 </head>
 <body>
- 
+  <div class="loader">
+    <video autoplay muted id="loader-video">
+      <source src="../samarthya.gif.mp4" type="video/mp4">
+    </video>
+  </div>
   
 <!--/Preloader -->  
   <video autoplay muted loop id="myVideo">
@@ -294,6 +298,20 @@ margin-bottom: 30px;
  
   </footer>
   <script src="../js/navbar.js"></script>
- 
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const loaderVideo = document.getElementById('loader-video');
+      const content = document.getElementById('content');
+  
+      // Add event listener to hide loader and show content when video ends
+      loaderVideo.addEventListener('ended', () => {
+        const loader = document.querySelector('.loader');
+        loader.style.display = 'none'; // Hide loader
+        content.style.display = 'block'; // Show content
+      });
+    });
+    
+    
+  </script>
 </body>
 </html>
