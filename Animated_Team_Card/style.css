@@ -397,6 +397,7 @@ canvas {
     font-size: 1rem;
     font-family: Poppins;
     font-weight: 500;
+    text-decoration: none;
     background-color: rgba(255, 255, 255, 0.125);
     border: 2px solid #ffffff9b;
     border-radius: 1rem;

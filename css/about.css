@@ -6,7 +6,14 @@
     width: 100%;
 }
 
-
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
 
 
 body{
@@ -507,6 +514,7 @@ canvas {
 
 /*register button*/
   .btn{
+    text-decoration: none;
     padding: 5px 15px;
     font-size: 1rem;
     font-family: Poppins;
