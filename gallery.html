@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>KL Samarthya 2024</title>
+  <link rel="stylesheet" href="./css/gallery.css">
+  <!-- <link rel="stylesheet" href="navbar.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+
+
+<div id="content">
+  <nav>
+      <div class="header container">
+          <div class="logo">
+              <a href="./index.html"><img style="width:120px;" src="logo.png" alt=""></a>
+          </div>
+          <div class="navlinks">
+              <ul>
+                  <li class="active"><a href="./index.html" class="link">Home</a></li>
+                  <li><a href="./carousel.html" class="link">Events</a></li>
+                  <li><a href="./gallery.html" class="link">Gallery</a></li>
+                  <li><a href="./team.html" class="link">Team</a></li>
+                  <li><a href="./about.html" class="link">About Us</a></li>
+              </ul>
+          </div>
+          <div class="ham">
+              <a class="neon" href="#">
+                  <span></span><span></span>
+                  <span></span><span></span>
+                  Login
+              </a>
+              <a href="./signup.html" class="btn">Register</a>
+          </div>
+      </div>
+      <canvas id="canvas"></canvas>
+  </nav>
+</div>
+
+<div class="gradient"></div>
+
+
+
+<main>
+  <h1>Click on the carousel</h1>
+  <div class="carousel" onclick="onClick()" onmousemove="onMouseMove(event)">
+    <div>
+      <img src="./images/1.jpg" />
+    </div>
+    <div>
+      <img src="./images/2.jpg" />
+    </div>
+    <div>
+      <img src="./images/9.jpg" />
+    </div>
+    <div>
+      <img src="./images/4.jpg" />
+    </div>
+    <div>
+      <img src="./images/5.jpg" />
+    </div>
+    <div>
+      <img src="./images/6.jpg" />
+    </div>
+    <div>
+      <img src="./images/7.jpg" />
+    </div>
+    <div>
+      <img src="./images/8.jpg" />
+    </div>
+    
+</main>
+<!-- partial -->
+  <script  src="./js/gallery.js"></script>
+  <script src="./js/navbar.js"></script>
+
+</body>
+</html>
