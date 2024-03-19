@@ -69,7 +69,7 @@ h1{
 
 .wrapper {
 
- border: 2px solid rgb(191, 191, 191);
+  border: 2px solid rgb(191, 191, 191);
 
   transition: all 0.5s;
   position: absolute;
@@ -79,7 +79,7 @@ h1{
 }
 
 .card:hover .wrapper {
-  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  transform: perspective(800px) translateY(-5%) rotateX(25deg) translateZ(0);
   box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
@@ -90,7 +90,8 @@ h1{
   content: "";
   opacity: 0;
   width: 100%;
-  height: 80px;
+  max-height: 80px;
+  /* height: 80px; */
   transition: all 0.5s;
   position: absolute;
   left: 0;
@@ -133,13 +134,16 @@ h1{
 }
 
 .character {
+  min-height: 80px !important;
   width: 100%;
   opacity: 0;
   transition: all 0.5s;
   position: absolute;
   z-index: -1;
 }
+.wrapper img{
 
+}
 .card:hover .character {
   opacity: 1;
   transform: translate3d(0%, -30%, 100px);
