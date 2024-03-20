@@ -29,8 +29,16 @@ h2{
 }
 .team-container{
   flex-basis: 100%;
-  max-width: 100%
-;
+  max-width: 100%;
+  
+}
+
+
+
+.fouth-chief{
+  display: grid;
+  margin: auto;
+  
 }
 .team-card{
   flex-basis: 100%;
