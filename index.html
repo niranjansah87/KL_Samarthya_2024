@@ -27,7 +27,7 @@
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 50px;
   left: 0;
   background-color: rgba(200,229,235,0.8);
   overflow-x: hidden;
@@ -61,49 +61,33 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-#developers-block { 
-    color: #f6be00;
-    background: #424a59;
-    padding: 80px 0;
-}
-#developers {
-    padding: 30px 0;
-}
-#developers .dev1 {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-}
-#developers .dev1 img {
-    width: 184px;
-    height: 184px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 50%;
-}
-#separation {
-    display: inline-block;
-    width: 150px;
-}
-#developers .dev1 p strong {
-    font-size: 16px;
-    color: #f0f0f0;
-    font-style: normal;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    display: block;
-}
-#developers .dev1 p {
-    font-weight: 400;
-    margin: 10px 0;
-    color: #bcb8b8;
-    font-style: italic;
-    font-family: 'PT Serif', serif;
-    font-size: 15px;
-}
+
 .aligncenter {
     text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .navlinks a:not(:first-child) {
+        display: none;
+    }
+    .navlinks a.icon {
+        display: block;
+    }
+    .navlinks.responsive {
+        flex-direction: column;
+        position:relative;
+        top: 50px; /* Adjust as needed */
+        left: 5px;
+        background-color: #333; /* Adjust background color as needed */
+        width: 100%;
+        padding-top: 30px;
+        z-index: 1000; /* Ensure it's above other content */
+    }
+    .navlinks.responsive a {
+        display: block;
+        text-align: center;
+        padding: 10px 0; /* Adjust padding as needed */
+        border-bottom: 1px solid #fff; /* Adjust border color as needed */
+    }
 }
 
 </style>
@@ -155,8 +139,8 @@
                     
                     <!-- Navigation -->
                     <nav>
-                        <div class="header container nav-height">
-                            <div class="navlink">
+                        <div class="header container nav-height" id="myTopnav">
+                            <div class="navlink" id="myTopnav">
                                 <ul >
                                     <li class="active"><a href="./index.html" class="alink">Home</a></li>
                                     <li><a href="./carousel.html" class="alink">Events</a></li>
@@ -174,7 +158,9 @@
                                 <a href="./signup.html" class="btn">REGISTER</a>
                             </div>
                         </div>
-                        
+                        <!-- <a href="javascript:void(0);" class="icon"  onclick="toggleNav()">
+                            <i class="fa fa-bars"></i>
+                        </a> -->
                     </nav>
                     <!--/Navigation -->
                     
@@ -482,6 +468,21 @@ window.onload = function() {
       
           </div>
 </body>
-
+<script>
+    // JavaScript function to toggle the sidebar
+    function toggleSidebar() {
+      var sidebar = document.getElementById("mySidenav");
+      if (sidebar.style.width === "0px" || sidebar.style.width === "") {
+        sidebar.style.width = "250px"; // Adjust width as needed
+      } else {
+        sidebar.style.width = "0px"; // Hide the sidebar
+      }
+    }
+  
+    // JavaScript function to close the sidebar
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 
 </html>
