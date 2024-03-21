@@ -1,424 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Samarthya 2024</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-    <meta name="author" content="">
-    <meta charset="UTF-8" />    
+    <meta name="author" content="" />
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/ico" href="./images/favicon.png" />
     <link href="style.css" rel="stylesheet" />
-     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css"> 
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-<link href="css/owl.theme.css" rel="stylesheet" media="screen">
-<link href="css/animate.css" rel="stylesheet" media="screen">
-<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+    <link href="css/animate.css" rel="stylesheet" media="screen" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="./css/navbar.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/navbar.css" />
 
-      <style >
- 
-    .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 50px;
-  left: 0;
-  background-color: rgba(200,229,235,0.8);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+    <style>
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 50px;
+        left: 0;
+        background-color: rgba(200, 229, 235, 0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  margin-top: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.aligncenter {
-    text-align: center;
-}
-@media screen and (max-width: 600px) {
-    .navlinks a:not(:first-child) {
-        display: none;
-    }
-    .navlinks a.icon {
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
         display: block;
-    }
-    .navlinks.responsive {
-        flex-direction: column;
-        position:relative;
-        top: 50px; /* Adjust as needed */
-        left: 5px;
-        background-color: #333; /* Adjust background color as needed */
-        width: 100%;
-        padding-top: 30px;
-        z-index: 1000; /* Ensure it's above other content */
-    }
-    .navlinks.responsive a {
-        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        margin-top: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+
+      .aligncenter {
         text-align: center;
-        padding: 10px 0; /* Adjust padding as needed */
-        border-bottom: 1px solid #fff; /* Adjust border color as needed */
-    }
-}
+      }
+      @media screen and (max-width: 600px) {
+        .navlinks a:not(:first-child) {
+          display: none;
+        }
+        .navlinks a.icon {
+          display: block;
+        }
+        .navlinks.responsive {
+          flex-direction: column;
+          position: relative;
+          top: 50px; /* Adjust as needed */
+          left: 5px;
+          background-color: #333; /* Adjust background color as needed */
+          width: 100%;
+          padding-top: 30px;
+          z-index: 1000; /* Ensure it's above other content */
+        }
+        .navlinks.responsive a {
+          display: block;
+          text-align: center;
+          padding: 10px 0; /* Adjust padding as needed */
+          border-bottom: 1px solid #fff; /* Adjust border color as needed */
+        }
+      }
+    </style>
+  </head>
 
-</style>
-</head>
-    
-
-
-
-
-
-
-<body class="hidden hidden-ball smooth-scroll">
-
-	<main>		
-        <!-- Preloader -->
-        <div class="preloader-wrap">
-            <div class="outer">
-                <div class="inner">
-                    <div class="percentage" id="precent"></div>
-                    <div class="trackbar">
-                        <div class="loadbar"></div>
-                    </div>
-                    <div class="headphones"></div>
-                    <div class="headphones-text">Turn up the volume for the<br>best experience</div>
-                </div>
+  <body class="hidden hidden-ball smooth-scroll">
+    <main>
+      <!-- Preloader -->
+      <div class="preloader-wrap">
+        <div class="outer">
+          <div class="inner">
+            <div class="percentage" id="precent"></div>
+            <div class="trackbar">
+              <div class="loadbar"></div>
             </div>
+            <div class="headphones"></div>
+            <div class="headphones-text">
+              Turn up the volume for the<br />best experience
+            </div>
+          </div>
         </div>
-        <!--/Preloader -->  
-        
-        <div class="cd-index cd-main-content">
-    
-            <!-- Page Content -->
-            <div id="page-content" class="light-content">
-                
-                <!-- Header -->
-                <header class="classic-menu">
-                    <canvas id="canvas"></canvas>
-                    <div id="header-container">
-                    
-                    
-                    <!-- Logo -->
-                    <div id="logo" class="hide-ball">
-                        <a class="ajax-link"  href="./index.html">
-                            <img class="black-logo" src="logo.png" alt="Samarthya">
-                            <img class="white-logo" src="logo.png" alt="Samarthya">
-                        </a>
-                    </div>
-                    <!--/Logo -->             
-                    
-                    <!-- Navigation -->
-                    <nav>
-                        <div class="header container nav-height" id="myTopnav">
-                            <div class="navlink" id="myTopnav">
-                                <ul >
-                                    <li class="active"><a href="./index.html" class="alink">Home</a></li>
-                                    <li><a href="./carousel.html" class="alink">Events</a></li>
-                                    <li><a href="./gallery.html" class="alink">Gallery</a></li>
-                                    <li><a href="./team.html" class="alink">Team</a></li>
-                                    <li><a href="./about.html" class="alink">About Us</a></li>
-                                </ul>
-                            </div>
-                            <div class="ham">
-                                <a class="neon" href="./login.html">
-                                    <span></span><span></span>
-                                    <span></span><span></span>
-                                    Login
-                                </a>
-                                <a href="./signup.html" class="btn">REGISTER</a>
-                            </div>
-                        </div>
-                        <!-- <a href="javascript:void(0);" class="icon"  onclick="toggleNav()">
+      </div>
+      <!--/Preloader -->
+
+      <div class="cd-index cd-main-content">
+        <!-- Page Content -->
+        <div id="page-content" class="light-content">
+          <!-- Header -->
+          <header class="classic-menu">
+            <canvas id="canvas"></canvas>
+            <div id="header-container">
+              <!-- Logo -->
+              <div id="logo" class="hide-ball">
+                <a class="ajax-link" href="./index.html">
+                  <img class="black-logo" src="logo.png" alt="Samarthya" />
+                  <img class="white-logo" src="logo.png" alt="Samarthya" />
+                </a>
+              </div>
+              <!--/Logo -->
+
+              <!-- Navigation -->
+              <nav>
+                <div class="header container nav-height" id="myTopnav">
+                  <div class="navlink" id="myTopnav">
+                    <ul>
+                      <li class="active">
+                        <a href="./index.html" class="alink">Home</a>
+                      </li>
+                      <li>
+                        <a href="./carousel.html" class="alink">Events</a>
+                      </li>
+                      <li>
+                        <a href="./gallery.html" class="alink">Gallery</a>
+                      </li>
+                      <li><a href="./team.html" class="alink">Team</a></li>
+                      <li><a href="./about.html" class="alink">About Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="ham">
+                    <a class="neon" href="./login.html">
+                      <span></span><span></span> <span></span><span></span>
+                      Login
+                    </a>
+                    <a href="./signup.html" class="btn">REGISTER</a>
+                  </div>
+                </div>
+                <!-- <a href="javascript:void(0);" class="icon"  onclick="toggleNav()">
                             <i class="fa fa-bars"></i>
                         </a> -->
-                    </nav>
-                    <!--/Navigation -->
-                    
-        
-                
-    
+              </nav>
+              <!--/Navigation -->
 
-
-
-
-
-
-                <!-- Menu Burger -->
-                <div id="burger-wrapper" class="parallax-wrap">
-                    <div id="menu-burger" class="parallax-element">
-                        <span></span>
-                        <span></span>
-                    </div>
+              <!-- Menu Burger -->
+              <div id="burger-wrapper" class="parallax-wrap">
+                <div id="menu-burger" class="parallax-element">
+                  <span></span>
+                  <span></span>
                 </div>
-                <!--/Menu Burger -->
-            
-                </div>
-            </header>
-            <!--/Header -->        
-            
-            <!-- Content Scroll -->
-            <div id="content-scroll">
-            
-            
-                <!-- Main -->
-                <div id="main">  
-                    <!-- Main Content -->
-                    <div id="main-content">
-                                    
-                                    
-                        
-                        <!-- Showcase Holder -->
-                        <div id="showcase-holder"> 
-                            <div id="showcase-tilt-wrap">
-                                <div id="showcase-tilt">
-                                    <div id="showcase-slider" class="swiper-container">
-                                        <div class="swiper-wrapper">
-                                    
-                                    <!-- Section Slide -->
-                                            <div class="swiper-slide bg-video" data-title="" data-subtitle="" data-number="01">                                    
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="./images/samarthya_land.jpg">
-                                                        <div class="hero-video-wrapper">
-                                                            <video loop muted class="bgvid">
-                                                                
-                                                                <source src="./samarthya.gif.mp4" type="video/mp4">
-                                                            </video>
-                                                        </div>
-                                                    </div>                                    
-                                                </div>
-                                                <a class="showcase-link-project"  href="about.html"></a>                                    
-                                            </div>
-                                            <!--/Section Slide -->
-
-                                            <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Code Buster" data-subtitle="Samarthya presents" data-number="02">                                    
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="images/01hero.jpg"></div>                               
-                                                </div>
-                                                <a class="showcase-link-project"  href="./code_busters.html"></a>
-                                            </div>
-                                            <!--/Section Slide -->
-                                            
-                                            
-                                            <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Instant Speech" data-subtitle="Samarthya presents" data-number="03">                                            
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="images/02hero.jpg"></div>                                            
-                                                </div>
-                                                <a class="showcase-link-project"  href="./instant speech.html"></a>
-                                            </div>
-                                            <!--/Section Slide -->					
-                                            <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Just a min" data-subtitle="Samarthya presents" data-number="11">                                    
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="images/03hero.jpg"></div>                                    
-                                                </div>
-                                                <a class="showcase-link-project"  href="./just a min.html"></a>                                    
-                                            </div>
-                                            <!--/Section Slide -->
-                                            <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Math Buzz" data-subtitle="Samarthya presents" data-number="04">                                        
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="images/04hero.jpg"></div>                                            
-                                                </div>
-                                                <a class="showcase-link-project"  href="./math buzz.html"></a>                                        
-                                            </div>
-                                            <!--/Section Slide -->
-                                            <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Pass the bomb" data-subtitle="Samarthya presents" data-number="05">                                        
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="images/05hero.jpg"></div>                                            
-                                                </div>
-                                                <a class="showcase-link-project"  href="./pass the bomb.html"></a>                                        
-                                            </div>
-                                            <!--/Section Slide -->
-                                            
-                                            <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Prime suspect" data-subtitle="Samarthya presents" data-number="06">                                        
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="images/06hero.jpg"></div>                                            
-                                                </div>
-                                                <a class="showcase-link-project"  href="./prime suspect.html"></a>                                        
-                                            </div>
-                                            <!--/Section Slide -->
-                                            
-                                            
-                                            <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Smash Kart" data-subtitle="Samarthya presents" data-number="07">                                    
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="images/07hero.jpg"></div>                                    
-                                                </div>
-                                                <a class="showcase-link-project"  href="./smash kart.html"></a>                                    
-                                            </div>
-                                            <!--/Section Slide -->
-                                            
-                                            
-                                            <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Soduko" data-subtitle="Samarthya presents" data-number="08">                                    
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="images/08hero.jpg"></div>                                    
-                                                </div>
-                                                <a class="showcase-link-project"  href="./soduko.html"></a>                                    
-                                            </div>
-                                            <!--/Section Slide -->
-                                            
-                                            
-                                            <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Tug of war" data-subtitle="Samarthya presents" data-number="09">                                    
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="images/09hero.jpg"></div>                                    
-                                                </div>
-                                                <a class="showcase-link-project"  href="./thug of war.html"></a>                                    
-                                            </div>
-                                            <!--/Section Slide -->
-                                            
-                                            
-                                            <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Word block" data-subtitle="Samarthya presents" data-number="10">                                    
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="images/10hero.jpg"></div>                                    
-                                                </div>
-                                                <a class="showcase-link-project"  href="./word block.html"></a>                                    
-                                            </div>
-                                            <!--/Section Slide -->
-                                            
-                                            
-                                            <!-- Section Slide -->
-                                            <div class="swiper-slide" data-title="Just a min" data-subtitle="Samarthya presents" data-number="11">                                    
-                                                <div class="img-mask">
-                                                    <div class="section-image" data-src="images/03hero.jpg"></div>                                    
-                                                </div>
-                                                <a class="showcase-link-project"  href="./just a min.html"></a>                                    
-                                            </div>
-                                            <!--/Section Slide -->              
-                                            
-                                        </div>                                  
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="showcase-pagination-wrap">
-                                <div class="showcase-counter" data-total="11"></div>
-                                <div class="showcase-pagination"></div>
-                                <div class="caption-border left"></div>
-                                <div class="caption-border right"></div>
-                                <div class="arrows-wrap">
-                                    <div class="prev-wrap parallax-wrap"><div class="swiper-button-prev swiper-button-white parallax-element"></div></div>
-                                    <div class="next-wrap parallax-wrap"><div class="swiper-button-next swiper-button-white parallax-element"></div></div><span> </span><span> Swipe or Click Right/Left</span>
-                                </div>
-
-                            </div>                                 
-                        </div>    
-                        <!-- Showcase Holder -->
-                        
-                                
-                    </div>
-                    <!--/Main Content --> 
-                </div>
-                <!--/Main -->
-                
-                
+              </div>
+              <!--/Menu Burger -->
             </div>
-            <!--/Content Scroll -->
-            
-            
-            <!-- Footer -->
-            <footer class="fixed">        	
-                <div id="footer-container">
-                    
-                    <div class="button-wrap left">
-                        <div class="icon-wrap parallax-wrap">
-                            <div class="button-icon parallax-element">
-                                <div class="bars">
-                                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+          </header>
+          <!--/Header -->
+
+          <!-- Content Scroll -->
+          <div id="content-scroll">
+            <!-- Main -->
+            <div id="main">
+              <!-- Main Content -->
+              <div id="main-content">
+                <!-- Showcase Holder -->
+                <div id="showcase-holder">
+                  <div id="showcase-tilt-wrap">
+                    <div id="showcase-tilt">
+                      <div id="showcase-slider" class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide bg-video"
+                            data-title=""
+                            data-subtitle=""
+                            data-number="01"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="./images/samarthya_land.jpg"
+                              >
+                                <div class="hero-video-wrapper">
+                                  <video loop muted class="bgvid">
+                                    <source
+                                      src="./samarthya.gif.mp4"
+                                      type="video/mp4"
+                                    />
+                                  </video>
                                 </div>
+                              </div>
                             </div>
+                            <a
+                              class="showcase-link-project"
+                              href="about.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
+
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide"
+                            data-title="Code Buster"
+                            data-subtitle="Samarthya presents"
+                            data-number="02"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="images/01hero.jpg"
+                              ></div>
+                            </div>
+                            <a
+                              class="showcase-link-project"
+                              href="./code_busters.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
+
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide"
+                            data-title="Instant Speech"
+                            data-subtitle="Samarthya presents"
+                            data-number="03"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="images/02hero.jpg"
+                              ></div>
+                            </div>
+                            <a
+                              class="showcase-link-project"
+                              href="./instant speech.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide"
+                            data-title="Just a min"
+                            data-subtitle="Samarthya presents"
+                            data-number="11"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="images/03hero.jpg"
+                              ></div>
+                            </div>
+                            <a
+                              class="showcase-link-project"
+                              href="./just a min.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide"
+                            data-title="Math Buzz"
+                            data-subtitle="Samarthya presents"
+                            data-number="04"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="images/04hero.jpg"
+                              ></div>
+                            </div>
+                            <a
+                              class="showcase-link-project"
+                              href="./math buzz.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide"
+                            data-title="Pass the bomb"
+                            data-subtitle="Samarthya presents"
+                            data-number="05"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="images/05hero.jpg"
+                              ></div>
+                            </div>
+                            <a
+                              class="showcase-link-project"
+                              href="./pass the bomb.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
+
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide"
+                            data-title="Prime suspect"
+                            data-subtitle="Samarthya presents"
+                            data-number="06"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="images/06hero.jpg"
+                              ></div>
+                            </div>
+                            <a
+                              class="showcase-link-project"
+                              href="./prime suspect.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
+
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide"
+                            data-title="Smash Kart"
+                            data-subtitle="Samarthya presents"
+                            data-number="07"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="images/07hero.jpg"
+                              ></div>
+                            </div>
+                            <a
+                              class="showcase-link-project"
+                              href="./smash kart.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
+
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide"
+                            data-title="Soduko"
+                            data-subtitle="Samarthya presents"
+                            data-number="08"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="images/08hero.jpg"
+                              ></div>
+                            </div>
+                            <a
+                              class="showcase-link-project"
+                              href="./soduko.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
+
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide"
+                            data-title="Tug of war"
+                            data-subtitle="Samarthya presents"
+                            data-number="09"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="images/09hero.jpg"
+                              ></div>
+                            </div>
+                            <a
+                              class="showcase-link-project"
+                              href="./thug of war.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
+
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide"
+                            data-title="Word block"
+                            data-subtitle="Samarthya presents"
+                            data-number="10"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="images/10hero.jpg"
+                              ></div>
+                            </div>
+                            <a
+                              class="showcase-link-project"
+                              href="./word block.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
+
+                          <!-- Section Slide -->
+                          <div
+                            class="swiper-slide"
+                            data-title="Just a min"
+                            data-subtitle="Samarthya presents"
+                            data-number="11"
+                          >
+                            <div class="img-mask">
+                              <div
+                                class="section-image"
+                                data-src="images/03hero.jpg"
+                              ></div>
+                            </div>
+                            <a
+                              class="showcase-link-project"
+                              href="./just a min.html"
+                            ></a>
+                          </div>
+                          <!--/Section Slide -->
                         </div>
-                        <div class="button-text"><span data-on="Sound On" data-off="Sound Off">Sound On</span></div> 
+                      </div>
                     </div>
-                    
-                   <div class="footer-button-wrap parallax-wrap hide-ball">
-                        <div class="footer-button parallax-element">
-                            <div class="button-border rounded outline parallax-element-second"><span data-hover="Click and Hold">Know More</span></div>
-                        </div>
+                  </div>
+                  <div class="showcase-pagination-wrap">
+                    <div class="showcase-counter" data-total="11"></div>
+                    <div class="showcase-pagination"></div>
+                    <div class="caption-border left"></div>
+                    <div class="caption-border right"></div>
+                    <div class="arrows-wrap">
+                      <div class="prev-wrap parallax-wrap">
+                        <div
+                          class="swiper-button-prev swiper-button-white parallax-element"
+                        ></div>
+                      </div>
+                      <div class="next-wrap parallax-wrap">
+                        <div
+                          class="swiper-button-next swiper-button-white parallax-element"
+                        ></div>
+                      </div>
+                      <span> </span><span> Swipe or Click Right/Left</span>
                     </div>
-                    
-                    <div class="socials-wrap">            	
-                        <div class="socials-icon"><i class="fa fa-share-alt" aria-hidden="true"></i></div>
-                        <div class="socials-text">Follow us</div>
-                        <ul class="socials">
-                           
-                            <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/kl.csit" target="_blank">FB</a></span></li>
-                            <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/kl.samarthya/">IN</a></span></li>
-                        </ul>                
-                    </div>
-                    
+                  </div>
                 </div>
-            </footer>
-            <!--/Footer -->
-        
-        
-           
-        </div>    
+                <!-- Showcase Holder -->
+              </div>
+              <!--/Main Content -->
+            </div>
+            <!--/Main -->
+          </div>
+          <!--/Content Scroll -->
+
+          <!-- Footer -->
+          <footer class="fixed">
+            <div id="footer-container">
+              <div class="button-wrap left">
+                <div class="icon-wrap parallax-wrap">
+                  <div class="button-icon parallax-element">
+                    <div class="bars">
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-text">
+                  <span data-on="Sound On" data-off="Sound Off">Sound On</span>
+                </div>
+              </div>
+
+              <div class="footer-button-wrap parallax-wrap hide-ball">
+                <div class="footer-button parallax-element">
+                  <div
+                    class="button-border rounded outline parallax-element-second"
+                  >
+                    <span data-hover="Click and Hold">Know More</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="socials-wrap">
+                <div class="socials-icon">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </div>
+                <div class="socials-text">Follow us</div>
+                <ul class="socials">
+                  <li>
+                    <span class="parallax-wrap"
+                      ><a
+                        class="parallax-element"
+                        href="https://www.facebook.com/kl.csit"
+                        target="_blank"
+                        >FB</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span class="parallax-wrap"
+                      ><a
+                        class="parallax-element"
+                        href="https://www.instagram.com/kl.samarthya/"
+                        >IN</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+          <!--/Footer -->
+        </div>
         <!--/Page Content -->
-    
-		</div>
-	</main>
-    
-    
-    
-    
+      </div>
+    </main>
+
     <div class="cd-cover-layer"></div>
     <div id="magic-cursor">
-        <div id="ball">
-        	<div id="hold-event"></div>
-        	<div id="ball-loader"></div>
-        </div>
+      <div id="ball">
+        <div id="hold-event"></div>
+        <div id="ball-loader"></div>
+      </div>
     </div>
     <div id="clone-image"></div>
     <div id="rotate-device"></div>
-    
-    
-		
+
     <script src="js/jquery.min.js"></script>
     <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js" ></script>
-	
-	<script src="js/plugins.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
     <script src="./js/navbar.js"></script>
     <script>
- 
       function openNav() {
         document.getElementById("mySidenav").style.width = "100%";
       }
@@ -427,62 +564,35 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
-      
-
     </script>
-<script>
-    // Check if the page exists
-function checkPageExistence() {
-    // Get the current page's URL
-    var currentPage = window.location.href;
-    
-    // Use fetch to check if the page exists
-    fetch(currentPage)
-    .then(response => {
-        if (!response.ok) {
-            // If the page is not found (404), redirect to the custom 404 page
-            window.location.href = './page-not-found.html';
-        }
-    })
-    .catch(error => {
-        console.error('Error checking page existence:', error);
-    });
-}
 
-// Call the function to check page existence when the page loads
-window.onload = function() {
-    checkPageExistence();
-};
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
 
-</script>
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script src="js/owl.carousel.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<script type="text/javascript" src="js/main.js"></script> 
-<script src="js/wow.min.js"></script> 
-
-<div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      
-          </div>
-</body>
-<script>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+    </div>
+  </body>
+  <script>
     // JavaScript function to toggle the sidebar
     function toggleSidebar() {
       var sidebar = document.getElementById("mySidenav");
       if (sidebar.style.width === "0px" || sidebar.style.width === "") {
         sidebar.style.width = "250px"; // Adjust width as needed
       } else {
-        sidebar.style.width = "0px"; // Hide the sidebar
+        sidebar.style.width = "0px";
       }
     }
-  
-    // JavaScript function to close the sidebar
+
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
   </script>
-
 </html>

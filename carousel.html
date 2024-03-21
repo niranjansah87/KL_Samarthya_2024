@@ -1,468 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	
-    
     <title>Samarthya 2024</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-    <meta name="author" content="">
-    <meta charset="UTF-8" />    
+    <meta name="author" content="" />
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/ico" href="images/favicon.png" />
     <link href="style.css" rel="stylesheet" />
-   <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-   <link rel="stylesheet" href="./css/navbar.css">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-<link href="css/owl.theme.css" rel="stylesheet" media="screen">
-<link href="css/animate.css" rel="stylesheet" media="screen">
-<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+    <link href="css/animate.css" rel="stylesheet" media="screen" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
-   <script src="jquery-3.3.1.min.js"></script>
-      <style >
-    .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(200,229,235,0.8);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700"
+      rel="stylesheet"
+    />
+    <script src="jquery-3.3.1.min.js"></script>
+    <style>
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(200, 229, 235, 0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  margin-top: 50px;
-}
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        margin-top: 50px;
+      }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-#developers-block { 
-    color: #f6be00;
-    background: #424a59;
-    padding: 80px 0;
-}
-#developers {
-    padding: 30px 0;
-}
-#developers .dev1 {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-}
-#developers .dev1 img {
-    width: 184px;
-    height: 184px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 50%;
-}
-#separation {
-    display: inline-block;
-    width: 150px;
-}
-#developers .dev1 p strong {
-    font-size: 16px;
-    color: #f0f0f0;
-    font-style: normal;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    display: block;
-}
-#developers .dev1 p {
-    font-weight: 400;
-    margin: 10px 0;
-    color: #bcb8b8;
-    font-style: italic;
-    font-family: 'PT Serif', serif;
-    font-size: 15px;
-}
-.aligncenter {
-    text-align: center;
-}
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+      #developers-block {
+        color: #f6be00;
+        background: #424a59;
+        padding: 80px 0;
+      }
+      #developers {
+        padding: 30px 0;
+      }
+      #developers .dev1 {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+      }
+      #developers .dev1 img {
+        width: 184px;
+        height: 184px;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      #separation {
+        display: inline-block;
+        width: 150px;
+      }
+      #developers .dev1 p strong {
+        font-size: 16px;
+        color: #f0f0f0;
+        font-style: normal;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        display: block;
+      }
+      #developers .dev1 p {
+        font-weight: 400;
+        margin: 10px 0;
+        color: #bcb8b8;
+        font-style: italic;
+        font-family: "PT Serif", serif;
+        font-size: 15px;
+      }
+      .aligncenter {
+        text-align: center;
+      }
+    </style>
+  </head>
 
-</style>
-   
-</head>
-    
-
-
-
-
-
-
-<body class="hidden hidden-ball smooth-scroll">
-
-	<main>	
-    	
-        <!-- Preloader -->
-        <div class="preloader-wrap">
-            <div class="outer">
-                <div class="inner">
-                    <div class="percentage" id="precent"></div>
-                    <div class="trackbar">
-                        <div class="loadbar"></div>
-                    </div>
-                    <div class="headphones"></div>
-                    <div class="headphones-text">Turn up the volume for the<br>best experience</div>
-                </div>
+  <body class="hidden hidden-ball smooth-scroll">
+    <main>
+      <!-- Preloader -->
+      <div class="preloader-wrap">
+        <div class="outer">
+          <div class="inner">
+            <div class="percentage" id="precent"></div>
+            <div class="trackbar">
+              <div class="loadbar"></div>
             </div>
+            <div class="headphones"></div>
+            <div class="headphones-text">
+              Turn up the volume for the<br />best experience
+            </div>
+          </div>
         </div>
-        <!--/Preloader -->  
-        
-        <div class="cd-index cd-main-content">
-    
-            <!-- Page Content -->
-            <div id="page-content" class="light-content">
-                
-                <!-- Header -->
-                <header class="classic-menu">
-                    <canvas id="canvas"></canvas>
-                    <div id="header-container">
-                    
-                    
-                    <!-- Logo -->
-                    <div id="logo" class="hide-ball">
-                        <a class="ajax-link"  href="#">
-                            <img class="black-logo" src="logo.png" alt="Samarthya">
-                            <img class="white-logo" src="logo.png" alt="Samarthya">
-                        </a>
-                    </div>
-                    <!--/Logo -->             
-                    
-                    <!-- Navigation -->
-                    <nav>
-                        <div class="header container">
-                            <div class="navlink">
-                                <ul>
-                                    <li class="active"><a href="./index.html" class="alink">Home</a></li>
-                                    <li><a href="./carousel.html" class="alink">Events</a></li>
-                                    <li><a href="./gallery.html" class="alink">Gallery</a></li>
-                                    <li><a href="./team.html" class="alink">Team</a></li>
-                                    <li><a href="./about.html" class="alink">About Us</a></li>
-                                </ul>
-                            </div>
-                            <div class="ham">
-                                <a class="neon" href="./login.html">
-                                    <span></span><span></span>
-                                    <span></span><span></span>
-                                    Login
-                                </a>
-                                <a href="./signup.html" class="btn">REGISTER</a>
-                            </div>
-                        </div>
-                        
-                    </nav>
-                    <!--/Navigation -->
-                    
-                    <!-- Menu Burger -->
-                    <div id="burger-wrapper" class="parallax-wrap">
-                        <div id="menu-burger" class="parallax-element">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                    <!--/Menu Burger -->
-                
-                    </div>
-                </header>
-                <!--/Header -->        
-                
-                <!-- Content Scroll -->
-                <div id="content-scroll">
-                
-                
-                    <!-- Main -->
-                    <div id="main">  
-                        <!-- Main Content -->
-                        <div id="main-content">
-                                        
-                                        
-                            
-                            <!-- Showcase Holder -->
-                            <div id="showcase-holder"> 
-                                <div id="showcase-carousel" class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                
-                                
-                                        <!-- Section Slide -->
-                                        <div class="swiper-slide">                                    
-                                            <div class="img-mask">
-                                                <div class="section-wrap-image">
-                                                	<div class="section-image" data-src="images/01hero.jpg"></div>
-                                                </div>                               
-                                            </div>
-                                            <a class="showcase-link-project"  href="./code_busters.html"></a>
-                                            <div class="slide-caption">                                
-                                                <h2 class="slide-title">CODE BUSTERS</h2>
-                                                <h4 class="slide-cat"><span data-hover="View Event">Department of CSIT</span></h4>
-                                            </div>
-                                        </div>
-                                        <!--/Section Slide -->
-                                        
-                                        
-                                        <!-- Section Slide -->
-                                        <div class="swiper-slide">                                    
-                                            <div class="img-mask">
-                                                <div class="section-wrap-image">
-                                                	<div class="section-image" data-src="images/02hero.jpg"></div>
-                                                </div>                                            
-                                            </div>
-                                            <a class="showcase-link-project"  href="./instant speech.html"></a>
-                                            <div class="slide-caption">                                
-                                                <h2 class="slide-title">INSTANT SPEECH</h2>
-                                                <h4 class="slide-cat"><span data-hover="View Event">Department of CSIT</span></h4>
-                                            </div>
-                                        </div>
-                                        <!--/Section Slide -->					
-                                        
-                                        
-                                        <!-- Section Slide -->
-                                        <div class="swiper-slide bg-video">                                    
-                                            <div class="img-mask">
-                                                <div class="section-wrap-image">
-                                                	<div class="section-image" data-src="images/04hero.jpg">
-                                                        
-                                                    </div>
-                                                </div>                                    
-                                            </div>
-                                            <a class="showcase-link-project"  href="./math buzz.html"></a>
-                                            <div class="slide-caption">                                
-                                                <h2 class="slide-title">Math Buzz</h2>
-                                                <h4 class="slide-cat"><span data-hover="View Event">Department of CSIT</span></h4>
-                                            </div>                                    
-                                        </div>
-                                        <!--/Section Slide -->
-                                        <div class="swiper-slide">                                        
-                                            <div class="img-mask">
-                                                <div class="section-wrap-image">
-                                                    <div class="section-image" data-src="images/05hero.jpg"></div>
-                                                </div>                                            
-                                            </div>
-                                            <a class="showcase-link-project"  href="./pass the bomb.html"></a>
-                                            <div class="slide-caption">                                
-                                                <h2 class="slide-title">PASS THE BOMB</h2>
-                                                <h4 class="slide-cat"><span data-hover="View Event">Department of CSIT</span></h4>
-                                            </div>                                        
-                                        </div>
-                                        
-                                        <!-- Section Slide -->
-                                        <div class="swiper-slide">                                        
-                                            <div class="img-mask">
-                                                <div class="section-wrap-image">
-                                                	<div class="section-image" data-src="images/06hero.jpg"></div>
-                                                </div>                                            
-                                            </div>
-                                            <a class="showcase-link-project"  href="./prime suspect.html"></a>
-                                            <div class="slide-caption">                                
-                                                <h2 class="slide-title">PRIME SUSPECTS</h2>
-                                                <h4 class="slide-cat"><span data-hover="View Event">Department of CSIT</span></h4>
-                                            </div>                                        
-                                        </div>
-                                        <!--/Section Slide -->
-                                        
-                                        
-                                        <!-- Section Slide -->
-                                        <div class="swiper-slide">                                        
-                                            <div class="img-mask">
-                                                <div class="section-wrap-image">
-                                                	<div class="section-image" data-src="images/07hero.jpg"></div>
-                                                </div>                                      
-                                            </div>
-                                            <a class="showcase-link-project"  href="./smash kart.html"></a>
-                                            <div class="slide-caption">                                
-                                                <h2 class="slide-title">SMASH KARTS</h2>
-                                                <h4 class="slide-cat"><span data-hover="View Event">Department of CSIT</span></h4>
-                                            </div>                                        
-                                        </div>
-                                        <!--/Section Slide -->
-                                        
-                                        
-                                        <!-- Section Slide -->
-                                        <div class="swiper-slide">                                    
-                                            <div class="img-mask">
-                                                <div class="section-wrap-image">
-                                                	<div class="section-image" data-src="images/08hero.jpg"></div>
-                                                </div>                                   
-                                            </div>
-                                            <a class="showcase-link-project"  href="./soduko.html"></a>
-                                            <div class="slide-caption">                                
-                                                <h2 class="slide-title">SODOKU</h2>
-                                                <h4 class="slide-cat"><span data-hover="View Event">Department of CSIT</span></h4>
-                                            </div>                                     
-                                        </div>
-                                        <!--/Section Slide -->
-                                        
-                                        
-                                        <!-- Section Slide -->
-                                        <div class="swiper-slide">                                    
-                                            <div class="img-mask">
-                                                <div class="section-wrap-image">
-                                                	<div class="section-image" data-src="images/09hero.jpg"></div>
-                                                </div>                                    
-                                            </div>
-                                            <a class="showcase-link-project"  href="./thug of war.html"></a>
-                                            <div class="slide-caption">                                
-                                                <h2 class="slide-title">TUG OF WAR</h2>
-                                                <h4 class="slide-cat"><span data-hover="View Event">Department of CSIT</span></h4>
-                                            </div>                                     
-                                        </div>
-                                        <!--/Section Slide -->
-                                        
-                                        
-                                        <!-- Section Slide -->
-                                        <div class="swiper-slide">                                    
-                                            <div class="img-mask">
-                                                <div class="section-wrap-image">
-                                                	<div class="section-image" data-src="images/10hero.jpg"></div>
-                                                </div>                                  
-                                            </div>
-                                            <a class="showcase-link-project"  href="./word block.html"></a>
-                                            <div class="slide-caption">                                
-                                                <h2 class="slide-title">WORD BLOCK</h2>
-                                                <h4 class="slide-cat"><span data-hover="View Event">Department of CSIT</span></h4>
-                                            </div>                                   
-                                        </div>
-                                        <!--/Section Slide -->
-                                        
-                                        <!-- Section Slide -->
-                                        <div class="swiper-slide">                                    
-                                            <div class="img-mask">
-                                            	<div class="section-wrap-image">
-                                                	<div class="section-image" data-src="images/03hero.jpg"></div>
-                                                </div>                                    
-                                            </div>
-                                            <a class="showcase-link-project"  href="./just a min.html"></a>
-                                            <div class="slide-caption">                                
-                                                <h2 class="slide-title">JUST A MIN</h2>
-                                                <h4 class="slide-cat"><span data-hover="View Event">Department of CSIT</span></h4>
-                                            </div>                                     
-                                        </div>
-                                        <!--/Section Slide -->
-                                        
-                                       
-                                        
-                                    </div>                                  
-                                </div>                           
-                            </div>    
-                            <!-- Showcase Holder -->
-                            
-                                    
-                        </div>
-                        <!--/Main Content --> 
-                    </div>
-                    <!--/Main -->
-                    
-                    
+      </div>
+      <!--/Preloader -->
+
+      <div class="cd-index cd-main-content">
+        <!-- Page Content -->
+        <div id="page-content" class="light-content">
+          <!-- Header -->
+          <header class="classic-menu">
+            <canvas id="canvas"></canvas>
+            <div id="header-container">
+              <!-- Logo -->
+              <div id="logo" class="hide-ball">
+                <a class="ajax-link" href="#">
+                  <img class="black-logo" src="logo.png" alt="Samarthya" />
+                  <img class="white-logo" src="logo.png" alt="Samarthya" />
+                </a>
+              </div>
+              <!--/Logo -->
+
+              <!-- Navigation -->
+              <nav>
+                <div class="header container">
+                  <div class="navlink">
+                    <ul>
+                      <li class="active">
+                        <a href="./index.html" class="alink">Home</a>
+                      </li>
+                      <li>
+                        <a href="./carousel.html" class="alink">Events</a>
+                      </li>
+                      <li>
+                        <a href="./gallery.html" class="alink">Gallery</a>
+                      </li>
+                      <li><a href="./team.html" class="alink">Team</a></li>
+                      <li><a href="./about.html" class="alink">About Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="ham">
+                    <a class="neon" href="./login.html">
+                      <span></span><span></span> <span></span><span></span>
+                      Login
+                    </a>
+                    <a href="./signup.html" class="btn">REGISTER</a>
+                  </div>
                 </div>
-                <!--/Content Scroll -->  
-                
-                
-                <!-- Footer -->
-                <footer class="fixed">        	
-                    <div id="footer-container">
-                        
-                        <div class="button-wrap left">
-                            <div class="icon-wrap parallax-wrap">
-                                <div class="button-icon parallax-element">
-                                    <div class="bars">
-                                        <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="button-text"><span data-on="Sound On" data-off="Sound Off">Sound On</span></div> 
-                        </div>
-                        
-                        <div class="swiper-scrollbar"></div>
-                        
-                        <div class="socials-wrap">            	
-                            <div class="socials-icon"><i class="fa fa-share-alt" aria-hidden="true"></i></div>
-                            <div class="socials-text">Follow us</div>
-                            <ul class="socials">
-                                
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/kl.csit/" target="_blank">Fb</a></span></li>
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/kl.samarthya/">In</a></span></li>
-                            </ul>                
-                        </div>
-                        
-                    </div>
-                </footer>
-                <!--/Footer -->
-                            
-                
-                <div class="thumb-container">
-                    <div class="thumb-page" data-src="images/01hero.jpg"></div>
-                    <div class="thumb-page" data-src="images/02hero.jpg"></div>
-                    <div class="thumb-page" data-src="images/03hero.jpg"></div>
-                    <div class="thumb-page" data-src="images/04hero.jpg"></div>
-                    <div class="thumb-page" data-src="images/05hero.jpg"></div>
-                    <div class="thumb-page" data-src="images/06hero.jpg"></div>
-                    <div class="thumb-page" data-src="images/07hero.jpg"></div>
-                    <div class="thumb-page" data-src="images/08hero.jpg"></div>
-                    <div class="thumb-page" data-src="images/09hero.jpg"></div>
-                    <div class="thumb-page" data-src="images/10hero.jpg"></div>
+              </nav>
+              <!--/Navigation -->
+
+              <!-- Menu Burger -->
+              <div id="burger-wrapper" class="parallax-wrap">
+                <div id="menu-burger" class="parallax-element">
+                  <span></span>
+                  <span></span>
                 </div>
-            
-               
-            </div>    
-            <!--/Page Content -->
-    
-		</div>
-	</main>
-    
-    
-    
-    
+              </div>
+              <!--/Menu Burger -->
+            </div>
+          </header>
+          <!--/Header -->
+
+          <!-- Content Scroll -->
+          <div id="content-scroll">
+            <!-- Main -->
+            <div id="main">
+              <!-- Main Content -->
+              <div id="main-content">
+                <!-- Showcase Holder -->
+                <div id="showcase-holder">
+                  <div id="showcase-carousel" class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <!-- Section Slide -->
+                      <div class="swiper-slide">
+                        <div class="img-mask">
+                          <div class="section-wrap-image">
+                            <div
+                              class="section-image"
+                              data-src="images/01hero.jpg"
+                            ></div>
+                          </div>
+                        </div>
+                        <a
+                          class="showcase-link-project"
+                          href="./code_busters.html"
+                        ></a>
+                        <div class="slide-caption">
+                          <h2 class="slide-title">CODE BUSTERS</h2>
+                          <h4 class="slide-cat">
+                            <span data-hover="View Event"
+                              >Department of CSIT</span
+                            >
+                          </h4>
+                        </div>
+                      </div>
+                      <!--/Section Slide -->
+
+                      <!-- Section Slide -->
+                      <div class="swiper-slide">
+                        <div class="img-mask">
+                          <div class="section-wrap-image">
+                            <div
+                              class="section-image"
+                              data-src="images/02hero.jpg"
+                            ></div>
+                          </div>
+                        </div>
+                        <a
+                          class="showcase-link-project"
+                          href="./instant speech.html"
+                        ></a>
+                        <div class="slide-caption">
+                          <h2 class="slide-title">INSTANT SPEECH</h2>
+                          <h4 class="slide-cat">
+                            <span data-hover="View Event"
+                              >Department of CSIT</span
+                            >
+                          </h4>
+                        </div>
+                      </div>
+                      <!--/Section Slide -->
+
+                      <!-- Section Slide -->
+                      <div class="swiper-slide bg-video">
+                        <div class="img-mask">
+                          <div class="section-wrap-image">
+                            <div
+                              class="section-image"
+                              data-src="images/04hero.jpg"
+                            ></div>
+                          </div>
+                        </div>
+                        <a
+                          class="showcase-link-project"
+                          href="./math buzz.html"
+                        ></a>
+                        <div class="slide-caption">
+                          <h2 class="slide-title">Math Buzz</h2>
+                          <h4 class="slide-cat">
+                            <span data-hover="View Event"
+                              >Department of CSIT</span
+                            >
+                          </h4>
+                        </div>
+                      </div>
+                      <!--/Section Slide -->
+                      <div class="swiper-slide">
+                        <div class="img-mask">
+                          <div class="section-wrap-image">
+                            <div
+                              class="section-image"
+                              data-src="images/05hero.jpg"
+                            ></div>
+                          </div>
+                        </div>
+                        <a
+                          class="showcase-link-project"
+                          href="./pass the bomb.html"
+                        ></a>
+                        <div class="slide-caption">
+                          <h2 class="slide-title">PASS THE BOMB</h2>
+                          <h4 class="slide-cat">
+                            <span data-hover="View Event"
+                              >Department of CSIT</span
+                            >
+                          </h4>
+                        </div>
+                      </div>
+
+                      <!-- Section Slide -->
+                      <div class="swiper-slide">
+                        <div class="img-mask">
+                          <div class="section-wrap-image">
+                            <div
+                              class="section-image"
+                              data-src="images/06hero.jpg"
+                            ></div>
+                          </div>
+                        </div>
+                        <a
+                          class="showcase-link-project"
+                          href="./prime suspect.html"
+                        ></a>
+                        <div class="slide-caption">
+                          <h2 class="slide-title">PRIME SUSPECTS</h2>
+                          <h4 class="slide-cat">
+                            <span data-hover="View Event"
+                              >Department of CSIT</span
+                            >
+                          </h4>
+                        </div>
+                      </div>
+                      <!--/Section Slide -->
+
+                      <!-- Section Slide -->
+                      <div class="swiper-slide">
+                        <div class="img-mask">
+                          <div class="section-wrap-image">
+                            <div
+                              class="section-image"
+                              data-src="images/07hero.jpg"
+                            ></div>
+                          </div>
+                        </div>
+                        <a
+                          class="showcase-link-project"
+                          href="./smash kart.html"
+                        ></a>
+                        <div class="slide-caption">
+                          <h2 class="slide-title">SMASH KARTS</h2>
+                          <h4 class="slide-cat">
+                            <span data-hover="View Event"
+                              >Department of CSIT</span
+                            >
+                          </h4>
+                        </div>
+                      </div>
+                      <!--/Section Slide -->
+
+                      <!-- Section Slide -->
+                      <div class="swiper-slide">
+                        <div class="img-mask">
+                          <div class="section-wrap-image">
+                            <div
+                              class="section-image"
+                              data-src="images/08hero.jpg"
+                            ></div>
+                          </div>
+                        </div>
+                        <a
+                          class="showcase-link-project"
+                          href="./soduko.html"
+                        ></a>
+                        <div class="slide-caption">
+                          <h2 class="slide-title">SODOKU</h2>
+                          <h4 class="slide-cat">
+                            <span data-hover="View Event"
+                              >Department of CSIT</span
+                            >
+                          </h4>
+                        </div>
+                      </div>
+                      <!--/Section Slide -->
+
+                      <!-- Section Slide -->
+                      <div class="swiper-slide">
+                        <div class="img-mask">
+                          <div class="section-wrap-image">
+                            <div
+                              class="section-image"
+                              data-src="images/09hero.jpg"
+                            ></div>
+                          </div>
+                        </div>
+                        <a
+                          class="showcase-link-project"
+                          href="./thug of war.html"
+                        ></a>
+                        <div class="slide-caption">
+                          <h2 class="slide-title">TUG OF WAR</h2>
+                          <h4 class="slide-cat">
+                            <span data-hover="View Event"
+                              >Department of CSIT</span
+                            >
+                          </h4>
+                        </div>
+                      </div>
+                      <!--/Section Slide -->
+
+                      <!-- Section Slide -->
+                      <div class="swiper-slide">
+                        <div class="img-mask">
+                          <div class="section-wrap-image">
+                            <div
+                              class="section-image"
+                              data-src="images/10hero.jpg"
+                            ></div>
+                          </div>
+                        </div>
+                        <a
+                          class="showcase-link-project"
+                          href="./word block.html"
+                        ></a>
+                        <div class="slide-caption">
+                          <h2 class="slide-title">WORD BLOCK</h2>
+                          <h4 class="slide-cat">
+                            <span data-hover="View Event"
+                              >Department of CSIT</span
+                            >
+                          </h4>
+                        </div>
+                      </div>
+                      <!--/Section Slide -->
+
+                      <!-- Section Slide -->
+                      <div class="swiper-slide">
+                        <div class="img-mask">
+                          <div class="section-wrap-image">
+                            <div
+                              class="section-image"
+                              data-src="images/03hero.jpg"
+                            ></div>
+                          </div>
+                        </div>
+                        <a
+                          class="showcase-link-project"
+                          href="./just a min.html"
+                        ></a>
+                        <div class="slide-caption">
+                          <h2 class="slide-title">JUST A MIN</h2>
+                          <h4 class="slide-cat">
+                            <span data-hover="View Event"
+                              >Department of CSIT</span
+                            >
+                          </h4>
+                        </div>
+                      </div>
+                      <!--/Section Slide -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Showcase Holder -->
+              </div>
+              <!--/Main Content -->
+            </div>
+            <!--/Main -->
+          </div>
+          <!--/Content Scroll -->
+
+          <!-- Footer -->
+          <footer class="fixed">
+            <div id="footer-container">
+              <div class="button-wrap left">
+                <div class="icon-wrap parallax-wrap">
+                  <div class="button-icon parallax-element">
+                    <div class="bars">
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-text">
+                  <span data-on="Sound On" data-off="Sound Off">Sound On</span>
+                </div>
+              </div>
+
+              <div class="swiper-scrollbar"></div>
+
+              <div class="socials-wrap">
+                <div class="socials-icon">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </div>
+                <div class="socials-text">Follow us</div>
+                <ul class="socials">
+                  <li>
+                    <span class="parallax-wrap"
+                      ><a
+                        class="parallax-element"
+                        href="https://www.facebook.com/kl.csit/"
+                        target="_blank"
+                        >Fb</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span class="parallax-wrap"
+                      ><a
+                        class="parallax-element"
+                        href="https://www.instagram.com/kl.samarthya/"
+                        >In</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+          <!--/Footer -->
+
+          <div class="thumb-container">
+            <div class="thumb-page" data-src="images/01hero.jpg"></div>
+            <div class="thumb-page" data-src="images/02hero.jpg"></div>
+            <div class="thumb-page" data-src="images/03hero.jpg"></div>
+            <div class="thumb-page" data-src="images/04hero.jpg"></div>
+            <div class="thumb-page" data-src="images/05hero.jpg"></div>
+            <div class="thumb-page" data-src="images/06hero.jpg"></div>
+            <div class="thumb-page" data-src="images/07hero.jpg"></div>
+            <div class="thumb-page" data-src="images/08hero.jpg"></div>
+            <div class="thumb-page" data-src="images/09hero.jpg"></div>
+            <div class="thumb-page" data-src="images/10hero.jpg"></div>
+          </div>
+        </div>
+        <!--/Page Content -->
+      </div>
+    </main>
+
     <div class="cd-cover-layer"></div>
     <div id="magic-cursor">
-        <div id="ball">
-        	<div id="hold-event"></div>
-        	<div id="ball-loader"></div>
-        </div>
+      <div id="ball">
+        <div id="hold-event"></div>
+        <div id="ball-loader"></div>
+      </div>
     </div>
     <div id="clone-image"></div>
     <div id="rotate-device"></div>
-    
-    
-		
+
     <script src="js/jquery.min.js"></script>
     <!-- <script src="./cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> -->
     <script src="cdnjs.cloudflare.com\ajax\libs\ScrollMagic\2.0.5\ScrollMagic.min.js"></script>
     <!-- <script src="./cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
     <script src="cdnjs.cloudflare.com\ajax\libs\ScrollMagic\2.0.5\plugins\debug.addIndicators.min.js"></script>
-    <script src="cdnjs.cloudflare.com\ajax\libs\ScrollMagic\2.0.5\plugins\animation.gsap.min.js" ></script>
-	
-	<script src="js/plugins.js"></script>
+    <script src="cdnjs.cloudflare.com\ajax\libs\ScrollMagic\2.0.5\plugins\animation.gsap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
- <script>
- 
+    <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "100%";
       }
@@ -471,52 +563,44 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
-      
-
     </script>
     <script>
-        // Check if the page exists
-    function checkPageExistence() {
+      // Check if the page exists
+      function checkPageExistence() {
         // Get the current page's URL
         var currentPage = window.location.href;
-        
+
         // Use fetch to check if the page exists
         fetch(currentPage)
-        .then(response => {
+          .then((response) => {
             if (!response.ok) {
-                // If the page is not found (404), redirect to the custom 404 page
-                window.location.href = './page-not-found.html';
+              // If the page is not found (404), redirect to the custom 404 page
+              window.location.href = "./page-not-found.html";
             }
-        })
-        .catch(error => {
-            console.error('Error checking page existence:', error);
-        });
-    }
-    
-    // Call the function to check page existence when the page loads
-    window.onload = function() {
+          })
+          .catch((error) => {
+            console.error("Error checking page existence:", error);
+          });
+      }
+
+      // Call the function to check page existence when the page loads
+      window.onload = function () {
         checkPageExistence();
-    };
-    
+      };
     </script>
-<!-- <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  -->
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script src="js/owl.carousel.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<script type="text/javascript" src="js/main.js"></script> 
-<script src="js/wow.min.js"></script> 
+    <!-- <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
 
-<div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      
-
-
-          </div>
-
-
-</body>
-
-
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+    </div>
+  </body>
 </html>
